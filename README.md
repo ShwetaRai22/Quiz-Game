@@ -35,3 +35,7 @@ Quiz-Game/
 ├── Qizeria.css
 ├── Qizeria.js
 └── README.md
+
+## 👩‍💻 About the Project
+
+This is a practice project created while learning JavaScript and frontend development. It helped me understand how JavaScript can be used to create dynamic and interactive web applications.
