@@ -28,7 +28,6 @@ A simple and interactive Web Development Quiz Game built using HTML, CSS, and Ja
 
 ## 📂 Project Structure
 
-```text
 Quiz-Game/
 │
 ├── index.html
