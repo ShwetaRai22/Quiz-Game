@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1,p{
+    font-family: 'Pacifico', cursive;
+}
+#container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 500px;
+    width: 600px;
+    box-shadow: 0px 0px 15px 2px rgb(172, 171, 171);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    position: relative;
+}
+#qnum{
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+#questionBox{
+    text-align: left;
+    font-family: 'Kalam', cursive;
+    color: rgb(82, 80, 80);
+    font-size:1.4em;
+    font-weight: bold;
+}
+#optionBox{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+#optionBox button{
+    height: 40px;
+    font-family: 'Caveat', sans-serif;
+    font-size:1.2em;
+    font-weight: 800;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color:ghostwhite;
+    box-shadow: 0px 0px 15px 2px rgb(211, 209, 209);
+    transition: 0.3s transform;
+}
+
+.navigate{
+width: 150px;
+height: 50px;
+font-family: 'Lilita One', cursive;
+margin-right: 120px;
+margin-left: 120px;
+font-size: large;
+border: none;
+background-color: darkblue;
+color: aliceblue;
+}
+#Start{
+    position: absolute;
+    left: 20%;
+    top: 45%;
+}
+button:hover{
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: black; 
+}
+#optionBox button:hover{
+    background-color: rgb(216, 226, 244);
+}
+#optionBox button:focus{
+    background-color:darkblue ;
+    color: aliceblue;
+}
+#resultBox{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: darkblue;
+    
+    color: rgb(224, 182, 12);
+    font-size: 1.3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 25px 5px rgb(84, 98, 246) ;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+#msg{
+    margin-top: 5px;
+    color: aliceblue;
+    font-family: cursive;
+    display: block;
+}
+.selected {
+    color: rgb(37, 203, 16);
+}
+button:active{
+    transform: scale(0.95);
+}
