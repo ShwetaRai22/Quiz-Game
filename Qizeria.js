@@ -3,11 +3,9 @@ const optionsBox = document.getElementById("optionBox");
 const mainBox = document.getElementById("container");
 const navOpt= document.getElementById("navOpt");
 const def=document.getElementById("def");
-
+const progress=document.getElementById("progress");
+const progressBar=document.getElementById("progressBar");
 const questions = [
-
-    // ==================== HTML ====================
-
     {
         id: 1,
         question: "What does HTML stand for?",
@@ -1237,7 +1235,8 @@ startBut.textContent = "Start";
 mainBox.append(startBut);
 
 function displayQues(currentQuestionIndex) {
-    
+    let progress = ((currentQuestionIndex + 1) / 15) * 100;
+    progressBar.style.width = progress + "%";
     quesnum.textContent=`Question ${currentQuestionIndex+1} of 15`;
     
     quesBox.textContent = quizQuestion[currentQuestionIndex].question;
@@ -1263,9 +1262,10 @@ function displayQues(currentQuestionIndex) {
     });
 }
 
+progress.style.opacity=0;
 startBut.addEventListener('click', () => {
     startBut.remove();
-    
+    progress.style.opacity=1;
     displayQues(currentQuestionIndex);
 
     const nextBut = document.createElement('button');
